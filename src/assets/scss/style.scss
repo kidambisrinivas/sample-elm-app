@@ -1,0 +1,61 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+// Signup page: Top header-panel
+$color_gossamer_approx: #009587;
+$white: #fff;
+
+.header-panel {
+	background-color: $color_gossamer_approx;
+	height: 144px;
+	position: relative;
+	z-index: 3;
+	div {
+		position: relative;
+		height: 100%;
+	}
+	h1 {
+		color: $white;
+		position: absolute;
+		bottom: 10px;
+		padding-left: 35px;
+	}
+}
+
+// Signup page: Left menu nav-bar
+//colors
+$color_alto_approx: #dedede;
+$color_mine_shaft_approx: rgb(51, 51, 51);
+
+.menu {
+	overflow: auto;
+	padding: 0;
+	//Instead of the line below you could use @include user-select($select)
+	user-select: none;
+	* {
+		//Instead of the line below you could use @include user-select($select)
+		user-select: none;
+	}
+	ul {
+		padding: 0;
+		margin: 7px 0;
+		li {
+			list-style: none;
+			padding: 20px 0 20px 50px;
+			font-size: 15px;
+			font-weight: normal;
+			cursor: pointer;
+			&.active {
+				background-color: $color_alto_approx;
+				position: relative;
+			}
+			a {
+				color: $color_mine_shaft_approx;
+				text-decoration: none;
+			}
+		}
+	}
+}

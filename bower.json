@@ -1,0 +1,21 @@
+{
+  "name": "sample-web-app",
+  "version": "0.1.0",
+  "homepage": "https://github.com/amitaibu/elm-login",
+  "authors": [
+    "Amitai Burstein <amitai@gizra.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+	"bootstrap-material-design": "~0.5.7",
+    "dropzone": "~4.2.0",
+    "leaflet": "~0.7.5"
+  }
+}
